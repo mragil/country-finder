@@ -18,6 +18,7 @@ const Homepage = () => {
   }
 
   const filterCountries = (e) => {
+    setFilterRegion("all")
     const filtered = countriesDefault.filter((country) =>
       country.name.toLowerCase().includes(e.target.value.toLocaleLowerCase())
     )
