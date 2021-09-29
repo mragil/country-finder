@@ -8,7 +8,7 @@ import CountryDetail from "./pages/CountryDetailPage"
 
 function App() {
   return (
-    <div className='bg-light_bg font-nunito h-screen'>
+    <div className='bg-bg_primary font-nunito'>
       <Header />
       <div className='p-10'>
         <Router history={history}>

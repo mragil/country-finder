@@ -20,7 +20,7 @@ const CountryDetail = (props) => {
       <div className='mb-10 max-w-1/12 min-w-max'>
         <Link
           to='/'
-          className='flex items-center shadow bg-light_el px-5 py-2 gap-5 text-black'
+          className='flex items-center shadow bg-element_primary text-text_primary px-5 py-2 gap-5 text-black'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -42,7 +42,7 @@ const CountryDetail = (props) => {
       {!country ? (
         <h1>Loading...</h1>
       ) : (
-        <div className='md:flex md:justify-center md:items-center lg:justify-start lg:items-start md:gap-5'>
+        <div className='bg-element_primary text-text_primary rounded-xl md:flex md:justify-center md:items-center lg:justify-start lg:items-start md:gap-5'>
           <div className='md:w-1/2'>
             <img
               className='object-contain md:object-fill w-full rounded-t-xl'
@@ -51,7 +51,7 @@ const CountryDetail = (props) => {
             />
           </div>
 
-          <div className=' p-8 text-black'>
+          <div className=' p-8'>
             <h2 className='mb-4 text-2xl font-extrabold'>
               {!country.name ? "" : country.name}
             </h2>
@@ -132,7 +132,7 @@ const CountryDetail = (props) => {
                       <Link
                         to={`/country/details/${border}`}
                         key={border}
-                        className='flex items-center shadow bg-light_el m-1 px-5 py-2  text-black'
+                        className='flex items-center shadow  m-1 px-5 py-2 '
                       >
                         {border}
                       </Link>

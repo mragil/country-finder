@@ -2,9 +2,9 @@ import React from "react"
 
 const FilterDropdown = ({ value, setFilter }) => {
   return (
-    <div className=' bg-light_el rounded-lg mb-1 p-2 h-full md:w-tes md:mb-0'>
+    <div className=' bg-element_primary rounded-lg mb-1 p-2 h-full md:w-tes md:mb-0'>
       <select
-        className='w-full p-2 rounded-lg outline-none border-0'
+        className='w-full text-text_primary bg-element_primary p-2 rounded-lg outline-none border-0'
         name='region'
         id='region'
         value={value}

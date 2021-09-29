@@ -2,8 +2,8 @@ import React from "react"
 
 const SearchBar = ({ setFilter, value }) => {
   return (
-    <div className='bg-light_el shadow-lg p-2 mb-8 flex rounded-lg md:w-tes'>
-      <span className='w-auto flex justify-end items-center text-gray-500 p-2'>
+    <div className='bg-element_primary shadow-lg p-2 mb-8 flex rounded-lg md:w-tes'>
+      <span className='w-auto flex justify-end items-center text-text_primary p-2'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           className='h-6 w-6'
@@ -20,7 +20,7 @@ const SearchBar = ({ setFilter, value }) => {
         </svg>
       </span>
       <input
-        className='w-full rounded p-2 focus:outline-none'
+        className='w-full text-text_primary bg-element_primary rounded p-2 focus:outline-none'
         type='text'
         placeholder='Search for a country...'
         onChange={setFilter}

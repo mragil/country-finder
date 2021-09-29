@@ -5,14 +5,14 @@ import { formatNumber } from "../../utils/numberFormat"
 const CountryItem = (props) => {
   const { name, population, region, capital, flags, alpha3Code } = props.country
   return (
-    <div className='w-full p-6 mb-10  lg:w-tes lg:p-0'>
+    <div className='bg-element_primary text-text_primary rounded-xl w-full p-6 mb-10  lg:w-tes lg:p-0'>
       <div className='shadow-xl rounded-xl'>
         <img
           className='object-contain lg:object-cover object-center w-full lg:h-48 md:h-36 rounded-t-xl'
           src={flags.svg}
           alt='flag'
         />
-        <div className='p-4 lg:p-8 text-black'>
+        <div className='p-4 lg:p-8 '>
           <h2 className='mb-4 text-lg font-extrabold  '>{name}</h2>
           <p className='mb-2 text-base font-semibold'>
             Population :{" "}
@@ -28,7 +28,7 @@ const CountryItem = (props) => {
         <div className='px-6 py-4 rounded-b-xl'>
           <Link
             to={`/country/details/${alpha3Code}`}
-            className='inline-flex items-center mt-auto font-semibold text-blue-600 lg:mb-0 hover:text-black '
+            className='inline-flex items-center mt-auto font-semibold'
           >
             View Detail Information »
           </Link>

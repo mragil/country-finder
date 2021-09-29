@@ -7,10 +7,10 @@ module.exports = {
         nunito: ["Nunito Sans"],
       },
       colors: {
-        light_text: "hsl(200, 15%, 8%)",
-        light_input: "hsl(0, 0%, 52%)",
-        light_bg: "hsl(0, 0%, 98%)",
-        light_el: "hsl(0, 0%, 100%)",
+        bg_primary: "var(--color-bg-primary)",
+        text_primary: "var(--color-text-primary)",
+        element_primary: "var(--color-element-primary)",
+        input_primary: "var(--color-input-primary)",
       },
       width: {
         tes: "23%",
